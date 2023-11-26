@@ -12,6 +12,31 @@ function addToCollection(collection, title, artist, yearPublished) {
 collection.push (obj);
 return obj;
 }
+console.log(addToCollection(myCollection, "Circles", "Mac Miller", 2020));
+console.log(addToCollection(myCollection, "Blue World", "Mac Miller", 2020));
+console.log(addToCollection(myCollection, "Something Real", "Post Malone", 2023));
+console.log(addToCollection(myCollection, "Forgot my name", "Barefoot Surrender", 2019));
+console.log(addToCollection(myCollection, "Famous", "Kanye West", 2018));
+console.log(addToCollection(myCollection, "Stick Season", "Noah Kahn", 2021));
+
+console.log(myCollection);
+
+function showCollection(collection) {
+  collection.forEach(element => {
+    console.log(element.title + ' by ' + element.artist + ', published in ' + element.yearPublished);
+  });
+}
+showCollection(myCollection);
+
+function findByArtist(collection, artist){
+  var results = [];
+  results = collection.filter((element) => element.artist == artist);
+  return results;
+}
+
+
+
+
 
 
 
