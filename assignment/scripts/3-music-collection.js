@@ -33,8 +33,10 @@ function findByArtist(collection, artist){
   results = collection.filter((element) => element.artist == artist);
   return results;
 }
-
-
+console.log ('Finding music by Mac Miller ');
+console.log (findByArtist(myCollection, 'Mac Miller'));
+console.log ('Finding music by Drake ');
+console.log (findByArtist(myCollection, 'Drake'));
 
 
 
